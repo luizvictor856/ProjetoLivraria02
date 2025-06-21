@@ -5,8 +5,8 @@ export class emprestimo {
         public data_emprestimo: Date,
         public codigo: number,
         public data_devolucao: Date,
-        public data_entrega: Date,
-        public atraso_dias: number,
+        public data_entrega?: Date,
+        public atraso_dias?: number,
     ) {}
 
 
