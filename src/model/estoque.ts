@@ -1,7 +1,7 @@
 export class Estoque {
     constructor(
         public id: number,
-        public codigo: string,
+        public codigo: number,
         public quantidade_emprestimo: number = 0,
         public quantidade: number,
     ) {}
