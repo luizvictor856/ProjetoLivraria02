@@ -1,4 +1,4 @@
-export class estoque {
+export class Estoque {
     constructor(
         public id: number,
         public codigo: string,

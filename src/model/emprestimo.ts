@@ -1,4 +1,4 @@
-export class emprestimo {
+export class Emprestimo {
     constructor(
         public id: number,
         public usuario_id: string,
