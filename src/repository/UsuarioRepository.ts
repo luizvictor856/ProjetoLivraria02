@@ -22,6 +22,10 @@ export class UsuarioRepository {
     buscarCPF(cpf: string): Usuario | undefined {
         return this.usuarios.find(user => user.cpf === cpf);
     }
+
+     listarTodos(): Usuario[] {
+    return this.usuarios;
+  }
     
     atualizar(cpf: string, nome?: string, ativo?: boolean, categoria_id?: number, curso_id?: number, suspensao?: Date): boolean {
     const usuario = this.buscarCPF(cpf);
