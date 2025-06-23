@@ -1,3 +1,9 @@
 export class CategoriaUsuario {
-    constructor (public id: number, public name: string) {}
+    id: number;
+    nome: string;
+
+    constructor(id: number, nome: string){
+        this.id = id;
+        this.nome = nome;
+    }
 }
