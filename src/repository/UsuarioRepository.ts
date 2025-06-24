@@ -1,33 +1,31 @@
 import { Usuario } from "../model/Usuario";
 
-// utilização do estilo singleton;
 export class UsuarioRepository {
- 
-    private static instancia: UsuarioRepository;
-    private usuarios: Usuario [] =[];
+  private static instancia: UsuarioRepository;
+  private usuarios: Usuario[] = [];
 
-    private constructor () {}
+  private constructor() {}
 
-    static getInstancia(): UsuarioRepository {
-        if (!UsuarioRepository.instancia){
-            UsuarioRepository.instancia = new UsuarioRepository();
-        } 
-        return UsuarioRepository.instancia;
+  static getInstancia(): UsuarioRepository {
+    if (!UsuarioRepository.instancia) {
+      UsuarioRepository.instancia = new UsuarioRepository();
     }
+    return UsuarioRepository.instancia;
+  }
 
-    cadastrar(usuario: Usuario): void {
-        this.usuarios.push(usuario);
-    }
+  cadastrar(usuario: Usuario): void {
+    this.usuarios.push(usuario);
+  }
 
-    buscarCPF(cpf: string): Usuario | undefined {
-        return this.usuarios.find(user => user.cpf === cpf);
-    }
+  buscarCPF(cpf: string): Usuario | undefined {
+    return this.usuarios.find(user => user.cpf === cpf);
+  }
 
-     listarTodos(): Usuario[] {
+  listarTodos(): Usuario[] {
     return this.usuarios;
   }
-    
-    atualizar(cpf: string, nome?: string, ativo?: boolean, categoria_id?: number, curso_id?: number, suspensao?: Date): boolean {
+
+  atualizar(cpf: string, nome?: string, ativo?: boolean, categoria_id?: number, curso_id?: number, suspensao?: Date): boolean {
     const usuario = this.buscarCPF(cpf);
     if (!usuario) return false;
 
@@ -40,7 +38,6 @@ export class UsuarioRepository {
     return true;
   }
 
-  
   remover(cpf: string): boolean {
     const index = this.usuarios.findIndex(user => user.cpf === cpf);
     if (index === -1) return false;
@@ -48,11 +45,4 @@ export class UsuarioRepository {
     this.usuarios.splice(index, 1);
     return true;
   }
-
-
-
-
-
-
-
 }
