@@ -1,5 +1,5 @@
 import { UsuarioRepository } from "../repository/UsuarioRepository";
-import { Usuario } from "../model/usuario";
+import { Usuario } from "../model/Usuario";
 
 export class UsuarioService {
   private static instancia: UsuarioService;
