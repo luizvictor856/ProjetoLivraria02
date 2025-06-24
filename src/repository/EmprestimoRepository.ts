@@ -1,5 +1,5 @@
 import { UsuarioRepository } from "../repository/UsuarioRepository";
-import { Emprestimo } from "../model/emprestimo";
+import { Emprestimo } from "../model/Emprestimo";
 
 export class EmprestimoRepository {
     private emprestimos: Emprestimo[] = [];

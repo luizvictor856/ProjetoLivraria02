@@ -1,5 +1,5 @@
 import { EmprestimoRepository } from "../repository/EmprestimoRepository";
-import { Emprestimo } from "../model/emprestimo";
+import { Emprestimo } from "../model/Emprestimo";
 import { UsuarioService } from "../service/UsuarioService";
 import { EstoqueService } from "../service/EstoqueService";
 

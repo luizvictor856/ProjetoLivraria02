@@ -1,4 +1,4 @@
-import { CategoriaUsuario } from "../model/categoriaUsuario";
+import { CategoriaUsuario } from "../model/CategoriaUsuario";
 import { CategoriaUsuarioRepository } from "../repository/CategoriaUsuarioRepository";
 
 export class CategoriaUsuarioService{

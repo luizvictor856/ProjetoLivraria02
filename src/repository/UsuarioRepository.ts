@@ -1,4 +1,4 @@
-import { Usuario } from "../model/usuario";
+import { Usuario } from "../model/Usuario";
 
 // utilização do estilo singleton;
 export class UsuarioRepository {

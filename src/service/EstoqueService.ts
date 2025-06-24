@@ -1,5 +1,5 @@
 import { EstoqueRepository } from "../repository/EstoqueRepository";
-import { Estoque } from "../model/estoque";
+import { Estoque } from "../model/Estoque";
 
 export class EstoqueService {
   private static instancia: EstoqueService;

@@ -1,4 +1,4 @@
-import { Livro } from "../model/livro";
+import { Livro } from "../model/Livro";
 
 export class LivroRepository {
     private livros: Livro [] = [];
